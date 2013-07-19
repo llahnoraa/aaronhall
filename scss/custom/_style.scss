@@ -1,0 +1,541 @@
+/* 
+  
+  // TO DO
+  
+  • git repo for this like kennedys
+  • amazon S3 instead of dreamhost for css / images / fonts (fontawesome)
+  • clean and simple code for git repo!!
+  • minified CSS
+  • SASS clean
+  • IE not supported IF IE (all IE!)
+  • Test YSLOW for performance
+  • Remove uncessary SASS
+  • lazyload? test it out... required jquery? CND lazyload?
+  
+  • Add AATL laptop/ipad/iphone
+  
+
+
+  
+  • Optmize PNG files such as slicy vs PSD vs online PNG otpmize
+  
+*/
+
+// colors
+$w: #fff;
+$b: #000;
+$vrs: #ac88ce;
+$broom: #4987df;
+$cochlear: #fccc24;
+$cc: #9cdcfd;
+$retarget: #3b5998;
+$thh: #84ccd8;
+$microsites: #afafaf;
+$htc: #aca5e6;
+$wip: #bcf78c;
+$git: $b;
+$git-link: #4183c4;
+$red: #b20000;
+$whiteish: #fbfdff;
+$tealish: #d9e3ee;
+$greenish: #10596f;
+
+// typo
+$droid: 'Droid Serif', serif;
+$source: 'Source Sans Pro', sans-serif;
+$arial: Arial, sans-serif;
+
+h1, h2, h3, h4 {
+  font-weight: normal;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 55px;
+  @include max-width(480px) {
+    font-size: 45px;
+  }
+}
+
+h2 {
+  font-size: 35px;
+  @include max-width(480px) {
+    font-size: 25px;
+  }
+}
+
+h3, p {
+  font-family: $source;
+}
+
+h3 {
+  font-size: 22px;
+  @include max-width(480px) {
+    font-size: 20px;;
+  }
+}
+
+h4 {
+  font-size: 20px;
+  @include max-width(480px) {
+    font-size: 18px;;
+  }
+}
+
+p {
+  font-size: 18px;
+  @include max-width(480px) {
+    font-size: 15px;
+  }
+}
+
+// width
+$w90: 90%;
+$w1200: 1200px;
+$w1140: 1140px;
+$w960: 960px;
+$w640: 640px;
+$w320: 320px;
+
+// link
+a {
+	color: $w;
+	text-decoration: none;
+}
+
+// other
+.desktop {
+  display: block;
+  @include max-width(768px) {
+    display: none;
+  }
+}
+.mobile {
+  display: none;
+  @include max-width(768px) {
+    display: block;
+  }
+}
+
+.back {
+  width: 100%;
+  background: lighten($b,25%);
+  text-align: center;
+  display: block;
+  padding: 10px 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  
+  li {
+    list-style: none;
+  }
+  
+}
+
+::selection {background: lighten($b, 40%);color: $w;text-shadow:none}
+::-moz-selection {background: lighten($b, 40%);color: $w;text-shadow:none}
+
+//
+body {
+	font-family: $droid;
+	font-size: 1em;
+  line-height: 1.4;
+  background: $w;
+}
+
+.work {
+	@include outer-container;
+	max-width: $w640;
+	padding: 100px 10px;
+	@include max-width(320px) {
+  	padding: 50px 10px;
+	}
+}
+
+.tupperware {
+  @extend .work;
+}
+
+.hero {
+  margin-bottom: 50px;
+}
+
+.btn {
+  font-size: 16px;
+  width: 150px;
+  display: block;
+  text-align: center;
+  padding: 6px 0;
+  margin: 0 auto;
+  @include radius(5px);
+  
+  &:before {
+    font-family: FontAwesome;
+    content: "\F08E";
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+}
+
+.vrs {
+  padding-top: 50px; // fixed bar on top
+  @include max-width(768px) {
+    padding-top: 0;
+  }
+  background: lighten($vrs, 10%);
+  h2 {
+    color: darken($vrs, 45%);
+  }
+  p {
+    color: darken($vrs, 35%);
+  }
+  .link {
+    color: lighten($vrs, 45%);
+  }
+  .btn {
+    background: darken($vrs, 35%);
+    @include box-shadow(0 5px 0 darken($vrs, 50%));
+    &:hover {
+      background: darken($vrs, 40%);
+    }
+  }
+}
+
+.broom {
+  background: lighten($broom, 20%);
+  h2 {
+    color: darken($broom, 45%);
+  }
+  p {
+    color: darken($broom, 35%);
+  }
+  .link {
+    color: lighten($broom, 20%);
+  }
+  .btn {
+    background: darken($broom, 35%);
+    @include box-shadow(0 5px 0 darken($broom, 50%));
+    &:hover {
+      background: darken($broom, 40%);
+    }
+  }
+}
+
+.cochlear {
+  background: lighten($cochlear, 20%);
+  h2 {
+    color: darken($cochlear, 45%);
+  }
+  p {
+    color: darken($cochlear, 35%);
+  }
+  .link {
+    color: lighten($cochlear, 20%);
+  }
+  .btn {
+    background: darken($cochlear, 35%);
+    @include box-shadow(0 5px 0 darken($cochlear, 50%));
+    &:hover {
+      background: darken($cochlear, 40%);
+    }
+  }
+}
+
+.cc {
+  background: lighten($cc, 5%);
+  h2 {
+    color: darken($cc, 40%);
+  }
+  p {
+    color: darken($cc, 35%);
+  }
+  .link {
+    color: lighten($cc, 20%);
+  }
+  .btn {
+    background: darken($cc, 35%);
+    @include box-shadow(0 5px 0 darken($cc, 50%));
+    &:hover {
+      background: darken($cc, 40%);
+    }
+  }
+}
+
+.retarget {
+  background: lighten($retarget, 30%);
+  h2 {
+    color: darken($retarget, 45%);
+  }
+  p {
+    color: darken($retarget, 35%);
+  }
+  .link {
+    color: lighten($retarget, 20%);
+  }
+  .btn {
+    background: darken($retarget, 20%);
+    @include box-shadow(0 5px 0 darken($retarget, 50%));
+    &:hover {
+      background: darken($retarget, 25%);
+    }
+  }
+}
+
+.thh {
+  background: lighten($thh, 5%);
+  h2 {
+    color: darken($thh, 45%);
+  }
+  p {
+    color: darken($thh, 35%);
+  }
+  .link {
+    color: lighten($thh, 20%);
+  }
+  .btn {
+    background: darken($thh, 35%);
+    @include box-shadow(0 5px 0 darken($thh, 50%));
+    &:hover {
+      background: darken($thh, 40%);
+    }
+  }
+}
+
+.microsites {
+  background: lighten($microsites, 10%);
+  h2 {
+    color: darken($microsites, 45%);
+  }
+  p {
+    color: darken($microsites, 35%);
+  }
+  .center {
+    text-align: center;
+    .btn {
+      margin-right: 5px;
+      margin-left: 5px;
+      display: inline-block !important;
+      background: darken($microsites, 35%);
+      width: 165px !important;
+      @include box-shadow(0 5px 0 darken($microsites, 50%));
+      &:hover {
+        background: darken($microsites, 40%);
+      }
+      @include max-width(500px) {
+        display: block !important;
+        width: 55% !important;
+        margin: 0 auto;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .link {
+    color: lighten($microsites, 20%);
+  }
+}
+
+.htc {
+  background: lighten($htc, 2%);
+  h2 {
+    color: darken($htc, 45%);
+  }
+  p {
+    color: darken($htc, 35%);
+  }
+  .link {
+    color: lighten($htc, 20%);
+  }
+  .btn {
+    background: darken($htc, 35%);
+    @include box-shadow(0 5px 0 darken($htc, 50%));
+    &:hover {
+      background: darken($htc, 40%);
+    }
+  }
+}
+
+.wip {
+  background: lighten($wip, 10%);
+  h2 {
+    color: darken($wip, 40%);
+  }
+  p {
+    color: darken($wip, 40%);
+    text-align: center;
+  }
+  .link {
+    color: lighten($wip, 20%);
+  }
+  .btn {
+    background: darken($wip, 35%);
+    @include box-shadow(0 5px 0 darken($wip, 50%));
+    &:hover {
+      background: darken($wip, 40%);
+    }
+  }
+}
+
+.git {
+  background: lighten($git, 95%);
+  h2 {
+    color: darken($git, 40%);
+  }
+  h3 {
+    text-align: left;
+  }
+  p {
+    color: darken($git, 40%);
+    text-align: left;
+  }
+  .git-lists {
+    margin-top: 20px;
+    background: $w;
+    border: 1px solid lighten($b, 80%);
+    overflow: hidden;
+    @include radius(5px);
+    li {
+      border-bottom: 1px solid lighten($b, 80%);
+      &:last-child {
+        border-bottom: none;
+      }
+      &:hover {
+        background: lighten($git-link, 45%);
+      }
+      .git-link {
+        padding: 15px;
+        display: block;
+        h3 {
+          color: $git-link;
+          @include max-width(480px) {
+            font-size: 18px;
+          }
+        }
+        p {
+          font-size: 15px;
+          margin: 0;
+          @include max-width(480px) {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.me {
+  background: $whiteish;
+  h1 {
+    color: $red;
+    text-align: left;
+    @include max-width(768px) {
+      text-align: center;
+    }
+  }
+  h2 {
+    color: $greenish;
+  }
+  h3 {
+    text-align: left;
+    color: darken($greenish, 20%);
+    @include max-width(768px) {
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+  h4 {
+    color: darken($greenish, 10%);
+  }
+  p {
+    color: $greenish;
+  }
+  .small {
+    font-size: 15px;
+    @include max-width(768px) {
+      font-size: 13px;
+    }
+  }
+  a {
+    text-decoration: underline;
+    color: $red;
+  }
+  .link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    @include max-width(480px) {
+      font-size: 11px;
+    }
+  }
+  .btn {
+    color: $w;
+    text-decoration: none;  
+    background: $red;
+    @include box-shadow(0 5px 0 darken($red, 20%));
+    &:hover {
+      background: darken($red, 10%);
+    }
+    &:before {
+      content: "\F0E0";
+      vertical-align: top;
+    }
+  }
+}
+
+.top {
+  background: $whiteish;
+  border-bottom: 1px solid rgba($b,.4);
+  position: fixed;
+  width: 100%;
+  @include max-width(768px) {
+    position: relative;
+  }
+  
+  .tupperware {
+    padding: 10px;
+    .name {
+      color: lighten($b, 20%);
+      @include max-width(768px) {
+        text-align: center;
+      }
+      span {
+        color: lighten($b, 60%);
+        @include max-width(480px) {
+          display: block;
+          font-size: 12px;
+        }
+      }
+    }
+    ul {
+      float: right;
+      @include max-width(768px) {
+        margin: 10px auto 0;
+        width: 60%;
+        float: none;
+        text-align: center;
+      }
+      li {
+        display: inline-block;
+        margin-left: 10px;
+        &:first-child {
+          margin-left: 0;
+        }
+        a {
+          color: lighten($b, 80%);
+          &.email:hover {color: darken($red, 10%)}
+          &.github:hover {color: #9cdaf0}
+          &.twitter:hover {color: #28aae1}
+          &.dribbble:hover {color: #ea4c89}
+        }
+      }
+    }
+  }
+}

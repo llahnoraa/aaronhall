@@ -1,0 +1,45 @@
+/* For IE lovers */
+.lt-ie9 body,
+.lt-ie8 body,
+.lt-ie7 body {
+	padding-top: 50px;
+	background: $red;
+}
+.lt-ie9 section,
+.lt-ie8 section,
+.lt-ie7 section {
+	display: none;
+} 
+.chromeframe {
+	width: 640px;
+	margin: 0 auto;
+	text-align: center;
+	
+	.icon-thumbs-down {
+  	color: white;
+  	font-size: 140px !important;
+    margin: 50px 0 !important;
+    display: block;
+	}
+
+	h1 {
+		font-size: 55px;
+		line-height: 65px;
+		color: white;
+		margin-bottom: 25px;
+	}
+	
+	p {
+		font-size: 25px;
+		color: white;
+		a {
+			color: white;
+			text-decoration: underline;
+			font-weight: bold;
+			&:hover {
+				border-bottom-color: white;
+			}
+		}
+	}
+	
+}

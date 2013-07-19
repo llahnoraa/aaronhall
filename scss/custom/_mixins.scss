@@ -1,0 +1,9 @@
+// Write your own mixins
+
+// bourbo.io border-radius sucks, I used my own
+@mixin radius($radius: 10px, $prefixes: -moz -webkit) {
+	@each $prefix in $prefixes {
+		#{$prefix}-border-radius: $radius;
+	}
+	border-radius: $radius;
+}
