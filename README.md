@@ -1,5 +1,5 @@
 #[Aaron Hall](http://aaron.im)
-=======
+===
 
 Welcome. I figured I would toss my site up here so anyone could follow along and observe how I build most websites. If anyone has any questions feel free to reach out and ask.
 
@@ -17,6 +17,7 @@ Welcome. I figured I would toss my site up here so anyone could follow along and
 * [CodeKit](http://incident57.com/codekit/) - compile my scss into one css file (37kb)
 * [FontAwesome](http://fortawesome.github.io/) - Font Awesome is a full suite of 361+ pictographic icons for easy scalable vector graphics on websites
 * All pixels are used by [Wacom Intuous](http://www.wacom.com/en/products/pen-tablets/intuos/intuos5-touch-large). I've been mouse-free as long as I can remember.
+
 
 ---
 Cheers.

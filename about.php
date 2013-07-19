@@ -3,6 +3,8 @@
   include 'header.php';
 ?>
 
+<?php include("top.php"); ?>
+
 <section class="me">
 
   <div class="tupperware">
