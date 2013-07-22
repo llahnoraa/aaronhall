@@ -516,3 +516,22 @@ body {
     }
   }
 }
+
+// awards
+.opl {
+  position:fixed;
+  top:65px;
+  left:0;
+  z-index:99999;
+  @include max-width(768px) {
+    display: none;
+  }
+  a {
+    width:73px;
+    height:56px;
+    text-indent:-9999px;
+    display:block;
+    background:url('https://s3.amazonaws.com/onepagelove/one-page-love-award.png') no-repeat;
+    border: none;
+  }
+}
