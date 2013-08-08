@@ -1,0 +1,21 @@
+
+$red: #b20000;
+$whiteish: #fbfdff;
+$tealish: #d9e3ee;
+$greenish: #10596f;
+
+body {
+  font-family: 'Source Sans Pro';
+  text-align: center;
+  padding-top: 25px;
+  background: $whiteish;
+}
+
+p {
+  
+  font-size: 20px;
+
+  b {
+     color: $red;
+  } 
+}

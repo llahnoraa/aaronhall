@@ -22,6 +22,11 @@ $droid: 'Droid Serif', serif;
 $source: 'Source Sans Pro', sans-serif;
 $arial: Arial, sans-serif;
 
+html, html a {
+  -webkit-font-smoothing: antialiased !important;
+  //text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
 h1, h2, h3, h4 {
   font-weight: normal;
   text-align: center;
