@@ -4,13 +4,13 @@
 Welcome. I figured I would toss my site up here so anyone could follow along and observe how I build most websites. If anyone has any questions feel free to reach out and ask.
 
 # Setup
-* 17" Macbook Pro running Mountain Lion
+* 15" Retina Macbook Pro running Mavericks
 * [Adobe CS6](http://adobe.com) and occasionally [Pixelmator](http://pixelmator.com)
 * [Slicy](http://macrabbit.com/slicy/) - slice PSDs in a whole new way. It's so much better.
 * [Mamp Pro](http://www.mamp.info/en/mamp-pro/)
 * [VMware](http://www.vmware.com/)
 * [Favicon PSD](http://drublic.de/blog/html5-boilerplate-favicons-psd-template/) - HTML5 Boilerplate Favicon PSD Template
-* [Coda 2](http://panic.com/coda) and [Sublime Text](http://www.sublimetext.com/) - awesome web editors
+* [Sublime Text 3](http://www.sublimetext.com/3) - awesome web editor
 * [Mou](http://mouapp.com) - the missing Markdown editor for web developers
 * [Neat](http://neat.bourbon.io) - a lightweight semantic grid framework for Sass and Bourbon
 * [Bourbon](http://bourbon.io) - a simple and lightweight mixin library for Sass
