@@ -15,8 +15,8 @@
 <meta name='apple-mobile-web-app-capable' content='yes'>
 <meta name='apple-mobile-web-app-status-bar-style' content='black'>
 
-<link rel='shortcut icon' href='/img/favicon.png'>
-<link rel='apple-touch-icon' href='/img/apple-touch-icon-144x144-precomposed.png'>
+<link rel='shortcut icon' href='img/apple-touch-icon-144x144-precomposed.png'>
+<link rel='apple-touch-icon' href='img/apple-touch-icon-144x144-precomposed.png'>
 
 <link rel='stylesheet' href='css/base.css'>
 <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700|Droid+Serif'>
