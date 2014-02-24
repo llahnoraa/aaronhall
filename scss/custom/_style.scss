@@ -112,11 +112,11 @@ a {
 ul {
   margin: 0;
   padding: 0;
-  
+
   li {
     list-style: none;
   }
-  
+
 }
 
 ::selection {background: lighten($b, 40%);color: $w;text-shadow:none}
@@ -155,7 +155,7 @@ body {
   padding: 6px 0;
   margin: 0 auto;
   @include radius(5px);
-  
+
   &:before {
     font-family: FontAwesome;
     content: "\F08E";
@@ -163,7 +163,7 @@ body {
     margin-right: 10px;
     vertical-align: middle;
   }
-  
+
 }
 
 .vrs {
@@ -459,7 +459,7 @@ body {
   }
   .btn {
     color: $w;
-    text-decoration: none;  
+    text-decoration: none;
     background: $red;
     @include box-shadow(0 5px 0 darken($red, 20%));
     &:hover {
@@ -480,11 +480,14 @@ body {
   @include max-width(768px) {
     position: relative;
   }
-  
+
   .tupperware {
     padding: 10px;
     .name {
       color: lighten($b, 20%);
+      a {
+        color: lighten($b, 20%);
+      }
       @include max-width(768px) {
         text-align: center;
       }

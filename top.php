@@ -1,7 +1,7 @@
 <section class="top">
   <div class="tupperware">
     <div class="span-9">
-      <div class="name">Aaron Hall <span>Web, UI/UX and Front-end Developer</span></div>
+      <div class="name"><a href="/">Aaron Hall</a> <span>Web, UI/UX and Front-end Developer</span></div>
     </div>
     <div class="span-3">
       <ul>
